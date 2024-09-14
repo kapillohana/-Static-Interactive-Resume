@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9; /* Light gray background */
+    color: #333;
+    line-height: 1.6;
+    height: 100%; /* Full height to center */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.resume {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Left Side: Profile Section */
+.profile-section {
+    flex: 1;
+    background-color: #008080; /* Teal background */
+    color: white;
+    padding: 20px;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #fff; /* White border around the profile picture */
+    margin-bottom: 20px;
+}
+
+.info h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.info p {
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+/* Right Side: Content Section */
+.content-section {
+    flex: 2;
+    background-color: #f4f4f9;
+    padding: 20px;
+    border-radius: 0 10px 10px 0;
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border-left: 5px solid #FF6F61; /* Coral accent border */
+}
+
+section h2 {
+    color: #FF6F61;
+    margin-bottom: 10px;
+}
+
+.controls {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #008080; /* Teal button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #FF6F61; /* Coral on hover */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .resume {
+        flex-direction: column; /* Stack the columns on smaller screens */
+    }
+
+    .profile-section {
+        border-radius: 10px 10px 0 0;
+        text-align: center;
+    }
+
+    .content-section {
+        border-radius: 0 0 10px 10px;
+    }
+}
